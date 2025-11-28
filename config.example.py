@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Конфигурационный файл для AyuGram Custom Client
+Конфигурационный файл для jirgram
 Скопируйте этот файл в config.py и заполните своими данными
 """
 
@@ -35,7 +35,7 @@ FILES_DIRECTORY = Path("tdlib_files")
 MESSAGE_DATABASE = Path("messages_backup.db")
 
 # Логи
-LOG_FILE = Path("ayugram.log")
+LOG_FILE = Path("jirgram.log")
 LOG_LEVEL = "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
 
 # ======================
