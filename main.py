@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AyuGram Custom - Telegram Client with Advanced Features
+jirgram Custom - Telegram Client with Advanced Features
 Based on TDLib with ghost mode, anti-delete, and customization features
 """
 
@@ -142,7 +142,7 @@ class MessageDatabase:
         return None
 
 
-class AyuGramClient:
+class jirgramClient:
     """Main Telegram client with advanced features"""
     
     def __init__(self, api_id: str, api_hash: str, phone: str):
@@ -168,7 +168,7 @@ class AyuGramClient:
             api_id=self.api_id,
             api_hash=self.api_hash,
             phone=self.phone,
-            database_encryption_key='ayugram_secret_key_2025',
+            database_encryption_key='jirgram_secret_key_2025',
             files_directory='tdlib_files',
         )
         
@@ -267,7 +267,7 @@ class AyuGramClient:
     
     def run(self):
         """Start the client"""
-        logger.info("Starting AyuGram Custom Client...")
+        logger.info("Starting jirgram Custom Client...")
         logger.info(f"Ghost Mode: {self.config['ghost_mode']}")
         logger.info(f"Anti-Delete: {self.config['anti_delete']}")
         
@@ -303,7 +303,7 @@ def main():
         print("\n" + "="*70 + "\n")
         return
     
-    client = AyuGramClient(
+    client = jirgramClient(
         api_id=API_ID,
         api_hash=API_HASH,
         phone=PHONE
